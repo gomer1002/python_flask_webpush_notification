@@ -14,7 +14,7 @@ VAPID_PRIVATE_KEY = open(DER_BASE64_ENCODED_PRIVATE_KEY_FILE_PATH, "r+").readlin
 VAPID_PUBLIC_KEY = open(DER_BASE64_ENCODED_PUBLIC_KEY_FILE_PATH, "r+").read().strip("\n")
 
 VAPID_CLAIMS = {
-"sub": "mailto:develop@raturi.in"
+"sub": "mailto:chubaka1002@gmail.com"
 }
 
 def send_web_push(subscription_information, message_body):
@@ -63,4 +63,4 @@ def push_v1():
         return jsonify({'failed':str(e)})
 
 if __name__ == "__main__":
-    app.run(host="0.0.0.0",port=8080)
+    app.run(host="0.0.0.0", port=8080)
